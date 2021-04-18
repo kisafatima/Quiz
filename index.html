@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body class="zinc" >
+    <div id="main" class="three-dimensions-card quizCard">
+       
+        <h1 id="heading">QUIZ</h1>
+        <p>
+            <marquee direction="left" width="400px" height="20px"  id="mtag">
+            You have 20 seconds for each question
+            You will get 1 point for each correct answer.
+            At the end of the Quiz, your total score will be displayed.
+            Maximum score is 10 points. Good Luck!
+        </marquee>
+        <!-- <br>Click on the following button to start the quiz! -->
+        </p>
+        
+        <div id="startBtn">
+            <button id="stBtn" onclick="start()" class="zinc"> Start Quiz
+            </button>
+            
+        </div>
+    </div>
+    <div id="main1" class="three-dimensions-card hidden">
+        <table id="table">
+            <fieldset>Question # <span id="qNum">1</span><span id="countdown">20</span><span id="min">00:</span></fieldset>
+            <tr >
+                <td id="ques">Q: What does HTML stands for?</td>
+            </tr>
+            <tr  >
+               <td id="opt1" class="options zinc" onclick="selectOpt(this)"> 
+                 Hyperlinks and Text Markup Language
+               
+                </td>
+            </tr>
+            <tr>
+                <td id="opt2" class="options zinc" onclick="selectOpt(this)">Hyper Text Markup Language</td>
+            </tr>
+            <tr >
+                <td id="opt3" class="options zinc" onclick="selectOpt(this)">Home Tool Markup Language</td>
+            </tr>
+            <tr >
+                <td id="opt4" class="options zinc" onclick="selectOpt(this)"> 
+                    Hyper Text Majestic Language
+                    </td>
+            </tr>
+
+        </table>
+    
+    </div>
+    <div id="main2" class="three-dimensions-card quizCard hidden">      
+        <h1 id="heading">SCORE</h1>
+        <p id="score" >
+           
+        <!-- <br>Click on the following button to start the quiz! -->
+        </p>
+        
+        <div id="startBtn">
+            <button id="stBtn" onclick="startQuiz()" class="zinc"> Try Again!
+            </button>
+            
+        </div>
+    </div>
+    <div id="button">
+    <button onclick="nextQuestion()" id="next" class="hidden">Next
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </button>
+    
+</div>
+    
+<span id="tick" class="tick white hidden">&#x2714;</span>
+<span id="cross" class="cross white hidden">&#10008;</span>
+    <script src="app.js"></script>
+</body>
+</html>

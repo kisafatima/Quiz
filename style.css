@@ -1,0 +1,228 @@
+#main,#main1,#main2{
+    margin: auto;
+    margin-top: 120px;
+    width: 500px;
+    height: 320px;
+   background-color:white;
+     color: black;
+     padding-top: 1px;
+     transition: all 5s ease-in-out;
+}
+.quizCard{
+    text-align: center;
+   
+}
+#heading{
+    margin-top: 15%;
+    text-shadow: 3px 1px 5px gray;
+    font-family: 'Playfair Display', serif;
+   
+}
+#score{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+#countdown,#min{
+    float: right;
+    
+}
+fieldset{
+    margin: 15px 15px 15px 15px;
+   border: none;
+   border-bottom: 2px gray solid;
+   font-size: 20px;
+   padding: 10px 0 10px 10px;
+   font-family: 'Playfair Display', serif;
+   font-weight: 600;
+   
+}
+table{
+    padding: 0px 15px 5px 15px;
+}
+#ques{
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+.options{
+    padding: 10px 0px 10px 25px;
+    width: 480px;
+    transition: all 0.1s ease-in;
+    font-weight: bold;
+    font-size: 16;
+    font-family: 'Source Serif Pro', serif;
+    /* background-color: black; */
+}
+.options:active{
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+}
+
+#button{
+    text-align: center;
+    margin: 50px 0px 0px 60%;
+}
+.options:hover{
+    cursor: pointer;
+}
+.zinc{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.black{
+    
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+
+}
+#tick{
+    content: "\2714";
+}
+#cross{
+    content: "\2718";
+}
+.white{
+    color: white;
+    float: right;
+    padding-right: 20px;
+}
+
+.hidden{
+    display: none;
+}
+.layered-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.layered-card::before {
+    background: rgba(0, 0, 0, 0.3);
+    content: '';
+    
+    /* Position */
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(1rem, 1rem);
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    /* Display under the main content */
+    z-index: -1;
+}
+#mtag{
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+button {
+    border: 0;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 gray;
+    color: black;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+    font-family: 'Playfair Display', serif;
+  }
+  button:active {
+    box-shadow: 0 2px 0 gray;
+    transform: translateY(3px);
+  }
+
+
+
+
+
+
+  
+                  
+  
+
+:root {
+    --three-dimensions-card-left-side-width: 1.5rem;
+}
+
+.three-dimensions-card {
+    position: relative;
+}
+
+/* The left side */
+.three-dimensions-card::before { 
+    background: rgba(0, 0, 0, 0.3);
+    content: '';
+    
+    /* Position */
+    top: var(--three-dimensions-card-left-side-width);
+    left: 0px;
+    position: absolute;
+    transform: translate(-100%, 0) skewY(-45deg);
+    transform-origin: left top;
+
+    /* Size */
+    height: 100%;
+    width: var(--three-dimensions-card-left-side-width);
+}
+
+/* The bottom side */
+.three-dimensions-card::after {
+    background: rgba(0, 0, 0, 0.3);
+    content: '';    
+    
+    /* Position */
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    transform: translate(0, 100%) skewX(-45deg);
+    transform-origin: left top;
+
+    /* Size */
+    height: var(--three-dimensions-card-left-side-width);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:800px){
+#main{
+    margin-top: 100px;
+    width: 450px;
+    height: 300px;
+}
+}
